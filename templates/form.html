@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>{{ message }}</h3>
+<h1>Person Form</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    First Name:
+    <input type="text" name="first_name">
+
+    <br><br>
+
+    Last Name:
+    <input type="text" name="last_name">
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
